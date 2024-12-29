@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #1a1a1a;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Video */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the video stays in the background */
+}
+
+#background-video {
+    object-fit: cover; /* Makes sure the video covers the entire background */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensures content is above the video */
+    position: relative;
+    text-align: center;
+}
+
+/* Logo Container */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+/* Make the logo circular */
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%; /* Make it circular */
+    border: 4px solid #4caf50; /* Green border around logo */
+}
+
+.name {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.name a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.name a span {
+    color: #4caf50; /* Green color for "Digi" part */
+}
+
+.explore-button {
+    background-color: #4caf50; /* Green color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.explore-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Full-Screen Welcome Popup */
+.welcome-popup {
+    position: fixed; /* Fixed position to stay above all content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 9999; /* Ensure the popup stays on top */
+}
+
+.welcome-popup.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    text-align: center;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    color: #4caf50;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.popup-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    margin-top: 20px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #4caf50; /* Green color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

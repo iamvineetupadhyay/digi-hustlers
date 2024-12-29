@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi-Hustlers | Innovating the Future</title>
+    <link rel="stylesheet" href="globle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="logo-text"><span>Digi</span>-Hustlers</div>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="team.html" aria-current="page" class="active">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+        
+    </header>
+    
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <section class="projects-section">
+            <h2>Our Projects</h2>
+            <p align="center"class="section-intro">
+                At Digi-Hustlers, we take pride in delivering impactful solutions for our clients. Here are some of the projects we’ve successfully executed.
+            </p>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="/projects/img/project1.jpg" alt="Project 1">
+                    <h3 align="center">Project Name 1</h3>
+                    <p align="center" class="project-description">
+                        A brief description of the project that highlights its purpose, challenges solved, and outcomes.
+                    </p>
+                    <p align="center"><a href="project1-details.html" class="btn">Learn More</a></p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="/projects/img/project1.jpg" alt="Project 2">
+                    <h3 align="center">Project Name 2</h3>
+                    <p align="center" class="project-description">
+                        A short overview of the project's significance, key features, and success metrics.
+                    </p>
+                    <p align="center"><a href="project2-details.html" class="btn">Learn More</a></p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="/projects/img/project1.jpg" alt="Project 3">
+                    <h3 align="center">Project Name 3</h3>
+                    <p align="center" class="project-description">
+                        Details about the project’s objectives, innovative solutions provided, and final results.
+                    </p>
+                    <p align="center"><a href="project3-details.html" class="btn">Learn More</a></p>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="/projects/img/project1.jpg" alt="Project 4">
+                    <h3 align="center">Project Name 4</h3>
+                    <p align="center" class="project-description">
+                        Insights into how this project contributed to client success and what made it stand out.
+                    </p>
+                    <p align="center"><a href="project4-details.html" class="btn">  Learn More</a> </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Digi-Hustlers. All rights reserved. <a href="contact.html">Contact Us</a></p>
+        <!-- Optional social media links -->
+        <div class="social-media">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </footer>
+</body>
+
+</html>
+<script>// Function to toggle the mobile menu
+    function toggleMenu() {
+        const navMenu = document.querySelector('#nav-menu');
+        navMenu.classList.toggle('active');
+    }</script>

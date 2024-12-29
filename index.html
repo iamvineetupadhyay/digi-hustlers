@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi-Hustlers</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+
+<body>
+    <!-- Background Video -->
+    <div class="background">
+        <video autoplay muted loop id="background-video">
+            <source src="/videos/background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Logo (Replace with your logo image) -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Digi-Hustlers Logo" class="logo">
+        </div>
+
+        <div class="name">
+            <strong>Digi<span>-Hustlers</span></strong>
+        </div>
+        <button class="explore-button" onclick="handleExploreButton()">Explore Digi-Hustlers</button>
+    </div>
+
+    <!-- Full-Screen Welcome Message -->
+    <div class="welcome-popup">
+        <div class="popup-content">
+            <h1>Welcome to Digi-Hustlers!</h1>
+            <p>You Are Being Redirect To The official Website Of <strong>Digi<span>-Hustlers!</span></strong> Please Wait...</p>
+            <div class="loading-spinner"></div> <!-- Loading spinner -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to show the welcome popup when the "Explore Digi-Hustlers" button is clicked
+        function handleExploreButton() {
+            // Show the popup and apply no blur effect
+            document.querySelector('.welcome-popup').classList.add('visible');
+
+            // Simulate a delay before redirecting to home.html
+            setTimeout(function () {
+                redirectToHome();
+            }, 3000); // 3 seconds delay
+        }
+
+        // Function to redirect to home.html
+        function redirectToHome() {
+            window.location.href = 'home.html'; // Redirect to home page
+        }
+    
+    </script>
+</body>
+
+</html>

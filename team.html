@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Digi-Hustlers</title>
+    <link rel="stylesheet" href="globle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="logo-text"><span>Digi</span>-Hustlers</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="team.html" aria-current="page" class="active">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="team-section" id="team">
+            <h2 align="center">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    
+                    <img src="/team/Vineet.jpg" alt="Vineet Kr Upadhyay" class="team-photo">
+                    <h3>Vineet Kr Upadhyay</h3>
+                    <p ><strong>Email:</strong> iec.vineet@gmail.com</p>
+                    <p> <a href="/team/vineet.html" target="_blank">VIEW DETAILS </a></p>
+                </div>
+                <div class="team-member">
+                    <img src="/team/Akanksha.jpg" alt="Akanksha Rana" class="team-photo">
+                    <h3>Akanksha Rana</h3>
+                    <p><strong>Email:</strong> akkurana0726@gmail.com</p>
+                    <p> <a href="/team/akanksha.html" target="_blank">VIEW DETAILS </a></p>
+                </div>
+                <div class="team-member">
+                    <img src="/team/vandana.jpg" alt="Vandana Singh" class="team-photo">
+                    <h3>Vandana Singh</h3>
+                    <p><strong>Email:</strong> nikkysingh910@gmail.com</p>
+                    <p> <a href="/team/vandana.html" target="_blank">VIEW DETAILS </a></p>
+                </div>
+                <div class="team-member">
+                    <img src="/team/ankit.jpg" alt="Ankit Sarraf" class="team-photo">
+                    <h3>Ankit Sarraf</h3>
+                    <p><strong>Email:</strong> ankit1362005@gmail.com</p>
+                    <p> <a href="/team/ankit.html" target="_blank">VIEW DETAILS </a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Digi-Hustlers. All rights reserved. <a href="contact.html">Contact Us</a></p>
+   <!-- Optional social media links -->
+   <!-- Optional social media links -->
+   <div class="social-media">
+    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+    <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

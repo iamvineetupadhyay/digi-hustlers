@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extension Showcase</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="logo-text"><span>Digi</span>-Hustlers</div>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/vision.html">Vision</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/team.html" aria-current="page" class="active">Team</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            
+    <div class="hero-section">
+        <img src="/projects/img/project1.jpg" alt="Hero Image">
+    </div>
+ </section>
+
+        <section class="features-section">
+           
+            <h1>Boost Your Productivity with Our Chrome Extension</h1>
+            <p>In today’s fast-paced digital world, staying productive can be a real challenge. With distractions just a click away, focusing on tasks and managing time effectively often feels like an uphill battle. That’s where we come in. At<strong> Digi-Hustlers</strong>, we’ve developed a powerful Chrome extension designed to help you take control of your workday. Our extension helps you manage tasks, block distracting websites, and optimize your workflow—empowering you to get more done in less time.
+
+                In this blog post, we'll dive into the features of our Chrome extension, take a look at the development process, share performance insights, and explore the numerous benefits it can bring to your productivity</p>
+            <h2>Features</h2>
+            <ul>
+                <li>Timer for Focus Sessions: Set timers for dedicated focus sessions to ensure you stay on track with your tasks.</li>
+                <li>Site Blocking for Reduced Distractions: Block distracting websites to eliminate interruptions and maintain concentration.</li>
+                <li>Task Manager to Organize Your Day: Keep track of your tasks and manage your to-do list efficiently.</li>
+                <li>Real-Time Performance Tracking: Monitor your performance and productivity metrics in real-time to understand your progress.</li>
+            </ul>
+        </section>
+
+        <section class="development-section">
+            <h2>How We Built It</h2>
+            <p>Building this Chrome extension was a journey of learning and innovation. Here's how we did it:</p>
+            <h3>Technology Stack:</h3>
+            <ul>
+                <li><strong>HTML & CSS:</strong> Used for structuring and styling the extension's user interface.</li>
+                <li><strong>JavaScript:</strong> Implemented the core functionalities, including the timer, site blocking, and task management.</li>
+                <li><strong>Chrome Extensions API:</strong> Leveraged Chrome's APIs to create a seamless and integrated experience.</li>
+            </ul>
+            <h3>Development Process:</h3>
+            <ul>
+                <li><strong>Planning:</strong> Defined the extension's features and created a roadmap.</li>
+                <li><strong>Design:</strong> Designed a user-friendly interface with a focus on simplicity and usability.</li>
+                <li><strong>Implementation:</strong> Developed the features iteratively, testing each component thoroughly.</li>
+                <li><strong>Testing:</strong> Conducted extensive testing to ensure the extension works flawlessly across different scenarios.</li>
+            </ul>
+        </section>
+
+        <section class="performance-section">
+            <h2>Performance Insights</h2>
+            <p>During testing, our Chrome extension demonstrated significant performance improvements:</p>
+            <ul>
+                <li><strong>Reduced Distractions:</strong> Users reported a marked decrease in distractions, allowing them to focus better on their tasks.</li>
+                <li><strong>Improved Productivity:</strong> Many users saw an increase in their productivity levels, thanks to the timer and site-blocking features.</li>
+                <li><strong>Seamless Integration:</strong> The extension's lightweight design ensures it does not impact browser speed or performance.</li>
+            </ul>
+        </section>
+
+        <section class="benefits-section">
+            <h2>Why Students Love It</h2>
+            <p>Our Chrome extension has become a favorite among students for several reasons:</p>
+            <ul>
+                <li><strong>Study Sessions:</strong> The timer feature helps students manage their study sessions effectively, ensuring they take regular breaks and stay productive.</li>
+                <li><strong>Distraction-Free Studying:</strong> By blocking social media and other distracting websites, students can maintain their focus during study hours.</li>
+                <li><strong>Task Management:</strong> The task manager helps students keep track of their assignments, deadlines, and other academic responsibilities.</li>
+            </ul>
+            <h2>Conclusion</h2>
+            <p>Our Chrome extension is designed to help you stay productive and focused in an increasingly distracting world. By managing your tasks, blocking distractions, and providing real-time performance insights, it empowers you to take control of your time and achieve your goals. Download our Chrome extension today and experience the difference for yourself!</p>
+        </section>
+
+        
+
+       
+        <section class="share-section">
+            <h2>Share This Blog</h2>
+            <div class="share-buttons">
+                <a href="#" class="share-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="share-btn linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+             <!-- Floating button -->
+  <a href="https://github.com/iamvineetupadhyay/browser-extension" id="githubLink" class="floating-button">View on GitHub</a>
+
+  <!-- JavaScript to set the current page URL as the button link -->
+  
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digi-Hustlers | All Rights Reserved</p>
+        <!-- Optional social media links -->
+        <div class="social-media">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </footer>
+
+    <script>
+        // mobileMenu.js
+        function toggleMenu() {
+            const navMenu = document.querySelector('#nav-menu');
+            navMenu.classList.toggle('active');
+        }
+        <!-- JavaScript to set the current page URL as the button link -->
+        
+<a href="https://github.com/iamvineetupadhyay/browser-extension" id="githubLink" class="floating-button" target="_blank">View on GitHub</a>
+
+
+    // Get the current page URL
+    var currentUrl = window.location.href;
+
+    // Set the share URLs dynamically
+    document.querySelector('.facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+    document.querySelector('.twitter').href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=Check%20out%20this%20blog!`;
+    document.querySelector('.linkedin').href = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(currentUrl)}`;
+
+    </script>
+</body>
+</html>

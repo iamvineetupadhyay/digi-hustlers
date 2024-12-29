@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digi-Hustlers | Innovating the Future</title>
+        <link rel="stylesheet" href="/globle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="/logo.png" type="image/png">
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo-container">
+                <div class="logo"></div>
+                <div class="logo-text"><span>Digi</span>-Hustlers</div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/vision.html">Vision</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/team.html" aria-current="page" class="active">Team</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+            
+        </header>
+<body>
+    <main>
+        <section id="team-member">
+            <img src="ankit.jpg" alt="Ankit Sarraf">
+            <h2>Ankit Sarraf</h2>
+            <p>Ankit Sarraf is a dedicated B.Tech student currently in his 2nd year at IEC College of Engineering. He is passionate about technology and is always eager to learn and grow in his field.</p>
+            <p>Ankit has been involved in various projects and has shown exceptional skills in programming and problem-solving. He is a team player and always ready to help his peers. His dedication and hard work have earned him recognition among his professors and classmates.</p>
+            <p>In his free time, Ankit enjoys reading about the latest technological advancements and working on personal projects to enhance his skills. He is also an active member of several tech communities and participates in hackathons and coding competitions.</p>
+        </section>
+        <section id="message">
+            <h2>Message to Everyone</h2>
+            <p>We encourage everyone to pursue their passions and strive to be the best they can be. Remember, with dedication and hard work, you can achieve anything you set your mind to. Keep pushing forward and never give up on your dreams!</p>
+        </section>
+    </main>
+    
+
+    
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2024 Digi-Hustlers. All rights reserved.</p>
+       <!-- Optional social media links -->
+       <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <br>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div> 
+ 
+</footer>
+</body>
+</html>
+
+<script> 
+    // Function to toggle the mobile menu
+       function toggleMenu() {
+           const navMenu = document.querySelector('#nav-menu');
+           navMenu.classList.toggle('active');
+       }
+</script>
+<style>/* GENERAL STYLES */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f2f5;
+        color: #333;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    /* HEADER STYLES */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #212529;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+        background: url('/logo.png') center/cover no-repeat;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .logo-text {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #f8f9fa;
+    }
+    
+    .logo-text span {
+        color: #26FF00;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li a {
+        color: #f8f9fa;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+    
+    nav ul li a:hover, nav ul li a:focus {
+        color: #26FF00;
+        transform: scale(1.05);
+    }
+    
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .menu-icon div {
+        width: 25px;
+        height: 3px;
+        background-color: #f8f9fa;
+        transition: transform 0.3s ease;
+    }
+    
+    /* RESPONSIVE HEADER */
+    @media (max-width: 768px) {
+        nav ul {
+            display: none;
+            flex-direction: column;
+            background-color: #212529;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 999;
+        }
+    
+        nav ul.active {
+            display: flex;
+        }
+    
+        .menu-icon {
+            display: flex;
+        }
+    }
+    
+    /* MAIN STYLES */
+    main {
+        padding-top: 100px;
+        padding: 20px;
+    }
+    
+    /* TEAM MEMBER SECTION */
+    #team-member {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 900px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    
+    #team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 20px;
+    }
+    
+    #team-member h2 {
+        font-size: 2.5rem;
+        color: #212529;
+        margin-bottom: 20px;
+    }
+    
+    #team-member p {
+        font-size: 1rem;
+        color: #495057;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    
+    /* MESSAGE SECTION */
+    #message {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 900px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    
+    #message h2 {
+        font-size: 2.5rem;
+        color: #212529;
+        margin-bottom: 20px;
+    }
+    
+    #message p {
+        font-size: 1rem;
+        color: #495057;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    
+    /* FOOTER STYLES */
+    footer {
+        background-color: #212529;
+        color: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+        font-size: 1rem;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    footer a {
+        color: #26FF00;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    footer a:hover, footer a:focus {
+        color: #fff;
+    }
+    
+    /* SOCIAL LINKS */
+    .social-links {
+        margin-top: 10px;
+    }
+    
+    .social-links a {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 1.rem;
+        color: #26FF00;
+        transition: color 0.3s ease;
+    }
+    
+    .social-links a:hover, .social-links a:focus {
+        color: #1ed300;
+    }
+    </style>

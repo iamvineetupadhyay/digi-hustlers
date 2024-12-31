@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extension Showcase</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="logo-text"><span>Digi</span>-Hustlers</div>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/vision.html">Vision</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/team.html" aria-current="page" class="active">Team</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            
+    <div class="hero-section">
+        <img src="projects/img/RC-CAR.jpg.jpg" alt="Hero Image">
+    </div>
+ </section>
+
+        <section class="features-section">
+            <h1>Building an RC Car Using ESP32: A Project by Digi-Hustlers</h1>
+            <p>Are you a tech enthusiast looking for a fun and educational project? The Digi-Hustlers have put together an exciting guide to build your own RC car using the ESP32 microcontroller! This project combines the power of IoT with hands-on electronics, making it perfect for hobbyists and beginners alike.</p>
+            
+            <h2>What You'll Need:</h2>
+            <ul>
+                <li><strong>ESP32 Microcontroller:</strong> The brain of your RC car.</li>
+                <li><strong>Motor Driver (L298N):</strong> To control the motors.</li>
+                <li><strong>DC Motors:</strong> For the wheels.</li>
+                <li><strong>Battery:</strong> To power your car.</li>
+                <li><strong>Antenna:</strong> For wireless communication.</li>
+                <li><strong>PCB Board:</strong> To mount your components.</li>
+                <li><strong>Servo Motor:</strong> For steering (optional).</li>
+                <li><strong>Wires and Connectors:</strong> To connect everything together.</li>
+            </ul>
+        </section>
+
+        <section class="development-section">
+            <h2>How It Works:</h2>
+            <ol>
+                <li><strong>Setup:</strong> Connect the ESP32 to the motor driver and motors. Attach the battery to power the system.</li>
+                <li><strong>Programming:</strong> Write the code to control the motors using the ESP32. You can use MicroPython or Arduino programming languages.</li>
+                <li><strong>Control:</strong> Use a PC or a mobile app to send commands to the ESP32, controlling the car's movement.</li>
+            </ol>
+        </section>
+
+        <section class="benefits-section">
+            <h2>Benefits:</h2>
+            <ul>
+                <li><strong>Learning Experience:</strong> Gain hands-on experience with electronics, programming, and IoT.</li>
+                <li><strong>Customization:</strong> Modify the design and code to add new features or improve performance.</li>
+                <li><strong>Fun:</strong> Enjoy the thrill of building and controlling your own RC car!</li>
+            </ul>
+        </section>
+
+        <section class="resources-section">
+            <h2>Resources:</h2>
+            <p>Check out the Digi-Hustlers' GitHub repository for detailed instructions, code, and schematics. Join forums and communities to get help and share your progress with fellow enthusiasts.</p>
+        </section>
+
+        <section class="conclusion-section">
+            <h2>Conclusion</h2>
+            <p>Building an RC car using the ESP32 is a fantastic way to dive into the world of IoT and robotics. Whether you're a beginner or an experienced maker, this project offers a rewarding challenge and a lot of fun. Happy building!</p>
+        </section>
+        
+        <!-- Floating button -->
+        <a href="https://github.com/iamvineetupadhyay/browser-extension" id="githubLink" class="floating-button">View on GitHub</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digi-Hustlers | All Rights Reserved</p>
+        <!-- Optional social media links -->
+        <div class="social-media">
+            <a href="#"><img src="/images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="/images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="/images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="/images/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        // mobileMenu.js
+        function toggleMenu() {
+            const navMenu = document.querySelector('#nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    // Get the current page URL
+    var currentUrl = window.location.href;
+
+    // Set the share URLs dynamically
+    document.querySelector('.facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+    document.querySelector('.twitter').href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=Check%20out%20this%20blog!`;
+    document.querySelector('.linkedin').href = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(currentUrl)}`;
+
+    </script>
+</body>
+</html>

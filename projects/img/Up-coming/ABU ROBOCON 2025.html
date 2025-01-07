@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extension Showcase</title>
+    <link rel="stylesheet" href="/projects/img/Completed/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="logo-text"><span>Digi</span>-Hustlers</div>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li align="center"><a href="/home.html">Home</a></li>
+                <li align="center"><a href="/about.html">About</a></li>
+                <li align="center"><a href="/vision.html">Vision</a></li>
+                <li align="center"><a href="/projects.html">Projects</a></li>
+                <li align="center"><a href="/team.html" aria-current="page" class="active">Team</a></li>
+                <li align="center"><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <img src="/projects/img/project1.jpg" alt="Robot Basketball Hero Image">
+        </section>
+
+        <section class="features-section">
+            <h1>ABU Robocon 2025: A New Frontier in Robot Basketball</h1>
+            <p>The <strong>ABU Robocon 2025</strong> is here, and it’s bigger, better, and more exciting than ever! This year’s theme, <em>"Robot Basketball: Team Effort, Ultimate Success,"</em> highlights the importance of collaboration, strategy, and innovation in the world of robotics. Held in <strong>Ulaanbaatar, Mongolia</strong>, the competition brings together the brightest engineering minds from across Asia-Pacific to showcase their ingenuity and teamwork.</p>
+        </section>
+
+        <section class="game-overview-section">
+            <h2>Game Overview: Robot Basketball</h2>
+            <p>Inspired by traditional basketball, the <strong>ABU Robocon 2025</strong> introduces a high-tech twist to the sport. Teams of robots compete to score points by shooting basketballs into their opponent's basket while defending their own. Here are the key highlights:</p>
+            <ul>
+                <li><strong>Team Composition</strong>: Two robots, three students, one instructor, and up to three pit crew members.</li>
+                <li><strong>Gameplay Duration</strong>: 120 seconds for preliminaries, 160 seconds for knockouts.</li>
+                <li><strong>Scoring System</strong>:
+                    <ul>
+                        <li>3 points: Shots from the 3-point zone.</li>
+                        <li>2 points: Shots closer to the basket.</li>
+                        <li>7 points: Spectacular dunk shots.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="rules-section">
+            <h2>Key Rules and Specifications</h2>
+            <p>The <strong>ABU Robocon 2025 Rulebook</strong> lays down detailed guidelines for fair play and technical standards. Here’s an overview:</p>
+            <h3>Robot Specifications</h3>
+            <ul>
+                <li><strong>Dimensions</strong>: Robots must fit within an 800 mm diameter cylinder and a height of 1500 mm before the game. During play, they can extend to 1200 mm in diameter and 2400 mm in height.</li>
+                <li><strong>Weight</strong>: Combined weight of both robots must not exceed 50 kg.</li>
+                <li><strong>Power Sources</strong>: Only batteries, compressed air, or elastic force are allowed, with a maximum voltage of 24V.</li>
+            </ul>
+            <h3>Game Field</h3>
+            <ul>
+                <li><strong>Dimensions</strong>: 15m x 8m playing area with specific zones for operating and spare mechanisms.</li>
+                <li><strong>Equipment</strong>: Regulation basketballs, backboards, and visible shot clocks.</li>
+            </ul>
+        </section>
+
+        <section class="safety-section">
+            <h2>Safety First</h2>
+            <p>Safety is a top priority. Here’s how teams ensure a safe competition:</p>
+            <ul>
+                <li>Robots must include an emergency “STOP” button.</li>
+                <li>Participants must wear helmets, safety goggles, and running shoes.</li>
+                <li>Prohibited items include lead-acid batteries, explosives, and unsafe lasers.</li>
+            </ul>
+        </section>
+
+        <section class="schedule-section">
+            <h2>Event Schedule</h2>
+            <p>The competition spans multiple days to cover testing, rehearsals, and the main event:</p>
+            <ul>
+                <li><strong>August 22, 2025</strong>: Arrival and registration.</li>
+                <li><strong>August 23, 2025</strong>: Test runs and rehearsals.</li>
+                <li><strong>August 24, 2025</strong>: Contest Day.</li>
+                <li><strong>August 25, 2025</strong>: Meetings, workshops, and exchange programs.</li>
+                <li><strong>August 26, 2025</strong>: Departure.</li>
+            </ul>
+        </section>
+
+        <section class="importance-section">
+            <h2>Why ABU Robocon 2025 Matters</h2>
+            <p>ABU Robocon is more than a competition; it’s a platform for creativity, teamwork, and technical excellence. Participants gain invaluable experience in robotics, problem-solving, and international collaboration. Don’t miss the opportunity to witness cutting-edge innovation in action!</p>
+            <a href="http://aburobocon2025.mnb.mn" class="floating-button">Visit Official Website</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digi-Hustlers | All Rights Reserved</p>
+        <!-- Optional social media links -->
+        <div class="social-media">
+            <a href="#"><img src="/images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="/images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="/images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="/images/instagram-icon.png" alt="Instagram"></a>
+    </footer>
+
+    <script>
+        // mobileMenu.js
+        function toggleMenu() {
+            const navMenu = document.querySelector('#nav-menu');
+            navMenu.classList.toggle('active');
+        }
+
+    // Get the current page URL
+    var currentUrl = window.location.href;
+
+    // Set the share URLs dynamically
+    document.querySelector('.facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+    document.querySelector('.twitter').href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=Check%20out%20this%20blog!`;
+    document.querySelector('.linkedin').href = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(currentUrl)}`;
+
+    </script>
+</body>
+</html>
